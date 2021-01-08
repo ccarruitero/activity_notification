@@ -7,7 +7,7 @@ module ActivityNotification
 
     included do
       include Common
-      include Association
+      include ActivityNotification::Association
       include ActionDispatch::Routing::PolymorphicRoutes
       include Rails.application.routes.url_helpers
 
