@@ -1,3 +1,5 @@
+
+
 module ActivityNotification
   # Notifiable implementation included in notifiable model to be notified, like comments or any other user activities.
   module Notifiable
@@ -7,7 +9,7 @@ module ActivityNotification
 
     included do
       include Common
-      include Association
+      include ::ActivityNotification::Association
       include ActionDispatch::Routing::PolymorphicRoutes
       include Rails.application.routes.url_helpers
 

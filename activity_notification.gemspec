@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.required_ruby_version = '>= 2.1.0'
 
-  s.add_dependency 'railties', '>= 5.0.0', '< 6.1'
+  s.add_dependency 'railties'
   s.add_dependency 'i18n', '>= 0.5.0'
   s.add_dependency 'jquery-rails', '>= 3.1.1'
   s.add_dependency 'swagger-blocks', '>= 3.0.0'
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'yard', '>= 0.9.16'
   s.add_development_dependency 'yard-activesupport-concern', '>= 0.0.1'
   s.add_development_dependency 'devise', '>= 4.5.0'
-  s.add_development_dependency 'devise_token_auth', '>= 1.1.3'
+  s.add_development_dependency 'devise_token_auth'
   s.add_development_dependency 'mongoid-locker', '>=  2.0.0'
   s.add_development_dependency 'aws-sdk-sns', '~> 1'
   s.add_development_dependency 'slack-notifier', '>= 1.5.1'

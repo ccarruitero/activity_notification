@@ -2,13 +2,14 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'rails', '~> 6.0.0'
+gem 'rails', github: 'rails/rails'
 
 group :production do
   gem 'puma'
   gem 'pg'
   gem 'devise'
-  gem 'devise_token_auth'
+  gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth'
+  gem 'mongoid', github: 'mongodb/mongoid'
 end
 
 group :development do
